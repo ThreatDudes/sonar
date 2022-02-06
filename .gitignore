@@ -1,10 +1,17 @@
 # Editor Configs
 .idea/
 .vscode/
+.DS_Store
 
 # Config
 config/bot.json
 config/db.json
+config/cache.json
+
+#Logs
+combined.log
+error.log
+
 package-lock.json
 
 # Logs

@@ -1,5 +1,4 @@
 const {SlashCommandBuilder} = require('@discordjs/builders');
-const Guild = require('../models/guild.js');
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -10,7 +9,7 @@ module.exports = {
               .setDescription('Select the new admin role!'),
       ),
   async execute(interaction) {
-    Guild.findByPk(interaction.guildId).then(async (currentGuild) => {
+    db.guild.findByPk(interaction.guildId).then(async (currentGuild) => {
       if (!currentGuild) {
         return interaction.reply(
             'Please re-invite the bot so the database can sync!',
@@ -24,7 +23,7 @@ module.exports = {
         return interaction.reply('You need to mention a new admin role!');
       }
       if (interaction.member.roles.resolveId(adminRole.id)) {
-        Guild.update({
+        db.guild.update({
           bot_admin_role: newAdminRole.id,
         }, {
           where: {

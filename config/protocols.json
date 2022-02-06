@@ -1,0 +1,11 @@
+[
+  {
+    "name": "rss",
+    "description": "RSS Feed"
+  },
+  {
+    "name": "twitter",
+    "description": "Tweet"
+  }
+]
+

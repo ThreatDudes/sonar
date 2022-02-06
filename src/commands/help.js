@@ -1,12 +1,11 @@
 const {SlashCommandBuilder} = require('@discordjs/builders');
-const Guild = require('../models/guild.js');
 
 module.exports = {
   data: new SlashCommandBuilder()
-      .setName('setup')
+      .setName('help')
       .setDescription('Gives some useful insights!'),
   async execute(interaction) {
-    Guild.findByPk(interaction.guildId).then((guild) => {
+    db.guild.findByPk(interaction.guildId).then((guild) => {
       if (!guild) {
         return interaction.reply(
             'Please re-invite the bot so the database can sync!',

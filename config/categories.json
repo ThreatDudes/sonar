@@ -1,0 +1,27 @@
+[
+  {
+    "name": "media",
+    "description": "Media Outlets such as magazines"
+  },
+  {
+    "name": "vendor",
+    "description": "Hard and software vendors"
+  },
+  {
+    "name": "blog",
+    "description": "Blogs of companies, groups and individuals that are worth a look or two"
+  },
+  {
+    "name": "researchers",
+    "description": "Articles, papers and anything related to research"
+  },
+  {
+    "name": "hackforum",
+    "description": "Forum for all things hacking"
+  },
+  {
+    "name": "vulnerability",
+    "description": "Posts about vulnerabilities and disclosure of such"
+  }
+]
+

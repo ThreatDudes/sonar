@@ -30,7 +30,10 @@
     "discord-api-types": "^0.26.1",
     "discord.js": "^14.0.0-dev.1643889786.04502ce",
     "pg": "^8.7.1",
-    "sequelize": "^6.15.0"
+    "redis": "^4.0.3",
+    "rss-feed-emitter": "^3.2.2",
+    "sequelize": "^6.15.0",
+    "winston": "^3.5.1"
   },
   "devDependencies": {
     "eslint": "^8.8.0",
