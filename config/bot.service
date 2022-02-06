@@ -1,0 +1,13 @@
+[Unit]
+Description=TemplateDiscord Bot
+Documentation=https://github.com/ThreatDudes/bot-template
+After=network.target
+
+[Service]
+Type=simple
+User=bot-template
+ExecStart=/usr/bin/node /opt/bot-template/src/bot.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
